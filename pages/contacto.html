@@ -26,7 +26,7 @@
             <div class="header__h1--flex">
                 <div><h1 class="animate__animated animate__headShake animate__delay-5s animate__slow animate__infinite header__h1">CyclingWorld</h1></div>
             </div>
-            <nav class="header__navbar">                  
+            <!-- <nav class="header__navbar">                  
                 <ul class="header__navbar--ul">
                         <div class="header__navbar--flex">
                             <div><li><a href="../index.html">Inicio</a></li></div>
@@ -36,6 +36,54 @@
                             <div><li><a href="./contacto.html">Contacto</a></li></div>
                         </div>
                 </ul>   
+            </nav> -->
+            <nav class="navbar navbar-expand-lg bg-light navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../img/favicon-32x32.png" alt="" width="32" height="30" class="d-inline-block align-text-top">
+                    CyclingWorld
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./bicicletas.html">Bicicletas</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Ranking
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./ranking.html">Masculino</a></li>
+                                <li><a class="dropdown-item" href="./ranking.html">Femenino</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./ranking.html">WorldTour</a></li>
+                            </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Calendario
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./calendario.html">Masculino</a></li>
+                            <li><a class="dropdown-item" href="./calendario.html">Femenino</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./calendario.html">WorldTour</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <button type="button" class="btn btn-dark me-2" type="button">Ingresar</button>
+                      <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                      <button type="button" class="btn btn-dark me-2" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
             </nav>
         </header>
                   
@@ -61,7 +109,7 @@
         
         <aside class="aside">            
             
-            <form class="ingresar" action="">
+            <!-- <form class="ingresar" action="">
                 <div class="ingresar--aside">
                     <p class="ingresar--titulo">Ingresar</p>
                 </div>
@@ -74,8 +122,23 @@
                 
                 <input type="submit" class="botoningresar--submit" value="Ingresar">
                 
-            </form>
-            
+            </form> -->
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Redordarme</label>
+                </div>
+                <button type="submit" class="btn btn-dark me-2">Ingresar</button>
+              </form>
         </aside>
             
         

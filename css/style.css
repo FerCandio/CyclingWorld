@@ -44,7 +44,7 @@ body{
     background-size: contain;
     background-position: center;
     height: auto;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
 }
 
 .header__h1--flex{
@@ -62,7 +62,8 @@ body{
     font-weight: 800;
     border-radius: 5px;
     text-align: center;      
-    text-shadow: 5px 5px 5px rgb(238, 52, 52);    
+    text-shadow: 5px 5px 5px rgb(238, 52, 52);  
+    padding-bottom: 1rem;  
 }
 
 .header__irabajo {
@@ -84,7 +85,14 @@ body{
     font-size: 1rem;
 }
 
-.header__navbar{
+
+
+
+
+
+/* ---------------------------------------------------------------------Navbar viejo--- */
+
+/* .header__navbar{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -101,7 +109,7 @@ body{
     list-style-type: none;
     text-align: center;
     padding-left: 0;  
-    /* padding-bottom: 1rem; */
+    /* padding-bottom: 1rem; 
 }
 
 .header__navbar li {
@@ -128,7 +136,7 @@ body{
     border-radius: 5px;
     margin: 0.3rem;
     text-shadow: 3px 3px 5px rgb(238, 52, 52);       
-}
+} */
 
     /*--------------------------------------------------------------Navbar-----*/
     /*-------------------------------------------------------Pag Contacto-------*/
@@ -295,12 +303,12 @@ section {
     border-radius: 0px;    
 }
 
-.contenido__imagenes--flex {
+/* .contenido__imagenes--flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
 
 section img {
     padding: 0rem;
