@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----------------------------------------------------------------GRID----*/
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside section"
+    "footer footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto auto;
+}
+
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+}
+section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+
+   /*--------------------------------------------------------------------GRID---*/
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/*-----------------------------------------------------------------------Header---*/
+.header {
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/Sin\ título2.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    height: auto;
+    /* padding: 0.5rem; */
+}
+
+.header__h1--flex{
+    display: flex;
+    justify-content: center;
+}
+
+.header__h1{
+    text-decoration: wavy;
+    text-transform: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-style:normal;
+    font-weight: 800;
+    border-radius: 5px;
+    text-align: center;      
+    text-shadow: 5px 5px 5px rgb(238, 52, 52);  
+    padding-bottom: 1rem;  
+}
+
+.header__irabajo {
+    margin-left: 2rem;
+    background-color: rgba(0, 0, 0, 0.733);
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+}
+
+/*-----------------------------------------------------------------------Header---*/
+/*-----------------------------------------------------------------------Navbar---*/
+
+/* nav {
+    padding: 25px;
+} */
+
+.irabajo{
+    margin-top: 0.5rem;
+    padding: 0;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------Navbar viejo--- */
+
+/* .header__navbar{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header__navbar--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.header__navbar--ul{
+    padding-top: 0rem;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;  
+    /* padding-bottom: 1rem; 
+}
+
+.header__navbar li {
+    display: inline-block;
+    border: 2px solid rgba(0, 0, 0, 0); 
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.header__navbar li:hover {
+    border-color: rgb(238, 52, 52);
+}
+
+
+.header__navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(238, 52, 52);
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0.3rem;
+    text-shadow: 3px 3px 5px rgb(238, 52, 52);       
+} */
+
+    /*--------------------------------------------------------------Navbar-----*/
+    
+    /*-------------------------------------------------------Pag Contacto-------*/
+
+    /*-------------------------------------------------------Formulario(Section)*/
+
+.formulario{
+    background: rgba(0, 0, 0, 0.8);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding-bottom: 3rem;
+    font-size: 1rem;
+}
+
+.formulario .formulario--label{
+    display: block;
+    color: rgb(238, 52, 52);
+    position: relative;
+}
+
+.formulario--titulo{
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(238,52,52);
+    color: white;
+    font-size: 1.3rem;
+}
+
+.formulario--input {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(238,52,52);
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    color: white;
+}
+
+.formulario--textarea{
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(238,52,52);
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    color: white;
+    resize: vertical;
+    max-height: 150px;
+    min-height: 100px;
+}
+
+.botonformulario--submit{
+    width: 48%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(238, 52, 52);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+}
+
+.boton--reset{
+    width: 48%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(238, 52, 52);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    float: left;
+}
+
+/*-------------------------------------------------------Formulario(Section)*/
+/*----------------------------------------------------------Ingresar(Aside)*/
+
+.ingresar{
+    background: rgb(58, 58, 58);
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding-bottom: 3rem;
+    font-size: 1rem;
+}
+
+.ingresar .ingresar--label{
+    display: block;
+    color: rgb(238, 52, 52);
+    position: relative;
+}
+
+.ingresar--titulo{
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(238,52,52);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.ingresar--input {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(238,52,52);
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    color: white;
+    
+}
+.botoningresar--submit{
+    width: 48%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(238, 52, 52);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+    /*----------------------------------------------------Ingresar(Aside)--*/
+
+    /*-----------------------------------------------------Fin Pag CONTACTO--------*/
+    /*-----------------------------------------------------Inicio Main Pag INDEX---*/
+
+    /*---------------------------------------------------------Contenido---*/
+
+section {
+    line-height: 1.5; 
+    background-color: rgb(238, 238, 238);
+    background-image: linear-gradient(red yellow);
+    padding: 1rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;  
+    border: none; 
+    border-radius: 0px;    
+}
+
+/* .contenido__imagenes--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+section img {
+    padding: 0rem;
+    margin: 0.5rem;
+    width: 450px; 
+    border: 0px black;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+
+.contenido__titulo {
+    color:black;
+    text-align: center;
+    margin: 1rem; 
+    font-weight: 600;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);   
+}
+
+.contenido__texto{
+    color:black;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;    
+}
+
+    /*--------------------------------------------------------------Contenido----*/
+    /*-----------------------------------------------------------------Aside----*/
+
+
+aside {
+    background-color: rgb(255, 70, 70);
+    background-position: center;
+    background-size:contain;
+    line-height: 1.5;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    border: inset 5px rgb(131, 131, 131);
+    border-radius: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 0px 10px rgb(0, 0, 0);   
+}
+
+.aside__titulo {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 1rem;
+    text-shadow: 5px 5px 15px rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.aside__li {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1rem 1rem 1rem 1rem;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    line-height: 2.5;
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+/*-----------------------------------------------------------------Aside----*/
+/*-----------------------------------------------------------------Footer----*/
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(238,52,52);
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 600;
+    border: inset 5px rgb(131, 131, 131);
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    height: auto;
+    background-image: url(../img/Sin\ título2.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.footer__menu {
+    list-style: none;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+}
+
+.footer__titulo{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgb(238,52,52);
+    font-weight: 600;
+}
+
+.footer__ul__flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer__menu li{
+    border: 2px solid rgba(0, 0, 0, 0); 
+    transition: all 0.5s;
+    border-radius: 5px;
+
+}
+
+
+.footer__menu li:hover {
+    border-color: rgb(238, 52, 52);
+}
+
+.footer__menu a {
+    color: rgb(238,52,52);
+    text-decoration: none;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 10px rgb(238,52,52);
+}
+
+.irarriba{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.footer__irarriba{
+    margin-left: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border-radius: 3px;    
+}
+
+.footer__creditos {
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(238,52,52);
+}
+
+/*-----------------------------------------------------------------Footer----*/
+
+/*-----------------------------------------------------------MediaQueries----*/
+
+/*Mobile*/
+
+@media only screen and (max-width: 480px){
+    .grid{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 10rem auto 12rem;
+    }
+    .header__navbar--flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .header__navbar a {
+        padding: 0rem;
+        font-size: 0.7rem;
+        margin: 0.1rem;
+    }
+    .header__navbar{
+        padding-top: 0rem;
+        margin-top: 0.7rem;
+    }
+    .header__h1{
+        font-size: 2.5rem;
+    }
+    section img {
+        width: 200px; 
+    }
+    .footer__ul__flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }    
+    .footer__menu a {
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+    .footer__creditos {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+    .aside__titulo {
+        padding-top: 0rem;    
+    }
+    .aside__li {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0rem;
+        padding-right: 0rem;    
+    }
+    /*Contacto*/
+    /*Form Ingresar(Aside)*/
+    .ingresar{
+        width: 90%;
+        margin-right: 5px;
+        padding: 1rem 0.2rem 1rem 0.2rem;
+        font-size: 0.8rem;
+    }
+    .ingresar--titulo{
+        font-size: 1.1rem;
+    }
+    .botoningresar--submit{
+        font-size: 0.7rem;
+    }
+    /*Formulario(Section)*/
+    .formulario--label{
+        font-size: 0.8rem;
+    }
+    .formulario--titulo{
+        font-size: 1.1rem;
+    }
+    .boton--reset{
+        font-size: 0.7rem;
+    }
+    .botonformulario--submit{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+    .grid{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 15rem auto 12rem;
+    }
+    section img {
+        width: 300px; 
+    }
+    .header__navbar--flex {
+        justify-content: space-evenly;
+    }
+    .header__navbar a {
+        padding: 0rem;
+        font-size: 0.9rem;
+        margin: 0.2rem;           
+    }
+    .footer__ul__flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }    
+    .footer__menu a {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+    }
+    .footer__creditos {
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 979px) and (max-width: 1204px){
+    section img {
+        width: 350px; 
+    }
+}
