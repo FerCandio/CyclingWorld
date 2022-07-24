@@ -63,64 +63,13 @@ body {
   background-color: rgba(0, 0, 0, 0.733);
   box-shadow: 10px 10px 15px black; }
 
-/*-----------------------------------------------------------------------Header---*/
-/*-----------------------------------------------------------------------Navbar---*/
-/* nav {
-    padding: 25px;
-} */
 .irabajo {
   margin-top: 0.5rem;
   padding: 0;
   font-size: 1rem; }
 
-/* ---------------------------------------------------------------------Navbar viejo--- */
-/* .header__navbar{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.header__navbar--flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.header__navbar--ul{
-    padding-top: 0rem;
-    list-style-type: none;
-    text-align: center;
-    padding-left: 0;  
-    /* padding-bottom: 1rem; 
-}
-
-.header__navbar li {
-    display: inline-block;
-    border: 2px solid rgba(0, 0, 0, 0); 
-    transition: all 0.5s;
-    border-radius: 5px;
-}
-
-.header__navbar li:hover {
-    border-color: rgb(238, 52, 52);
-}
-
-
-.header__navbar a {
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(238, 52, 52);
-    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    border-radius: 5px;
-    margin: 0.3rem;
-    text-shadow: 3px 3px 5px rgb(238, 52, 52);       
-} */
-/*--------------------------------------------------------------Navbar-----*/
-/*-------------------------------------------------------Pag Contacto-------*/
+/*-----------------------------------------------------------------------Header---*/
+/*-------------------------------------------------------PAG CONTACTO-------*/
 /*-------------------------------------------------------Formulario(Section)*/
 .formulario {
   background: rgba(0, 0, 0, 0.8);
