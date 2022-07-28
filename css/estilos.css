@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*-----Colores-----*/
 /*-----Spacing-----*/
 /*-----Font-family-----*/
@@ -61,15 +62,17 @@ body {
     font-size: 1rem; }
   .header .navbar__texto {
     font-size: 1.3rem;
+    font-weight: 400;
     color: white;
     text-shadow: 3px 3px 3px #ee3434; }
     .header .navbar__texto:hover {
       text-decoration: underline; }
   .header .navbar__texto2 {
     font-size: 1.3rem;
-    color: black; }
+    color: black;
+    font-weight: 600; }
 
-/*-----------------------------------------------------------------------Header---*/
+/*--------------------------------------------------------Header------------*/
 /*-------------------------------------------------------PAG CONTACTO-------*/
 /*-------------------------------------------------------Formulario(Section)*/
 .formulario {
@@ -145,16 +148,19 @@ body {
     border-radius: 3px;
     float: left; }
 
-/*-------------------------------------------------------Formulario(Section)*/
-/*----------------------------------------------------------Ingresar(Aside)*/
+/*------------------------------------------------Formulario(Section)-------*/
+/*-----------------------------------------------------Ingresar(Aside)-----*/
 .mb-3 {
   margin-right: 0.5rem;
   font-size: 1.2rem; }
 
-/*----------------------------------------------------Ingresar(Aside)--*/
+.aside__textoingresar {
+  text-shadow: 2px 2px 5px black; }
+
+/*-------------------------------------------------------Ingresar(Aside)---*/
 /*-----------------------------------------------------Fin Pag CONTACTO--------*/
 /*-----------------------------------------------------Inicio Main Pag INDEX---*/
-/*---------------------------------------------------------Contenido---*/
+/*---------------------------------------------------------Contenido------*/
 section {
   line-height: 1.5;
   background-color: #eeeeee;
@@ -170,7 +176,7 @@ section {
     text-align: center;
     margin: 1rem;
     font-weight: 600;
-    text-shadow: 4px 4px 4px #ee3434;
+    text-shadow: 4px 4px 4px black;
     font-size: 2rem; }
   section .contenido__texto {
     color: black;
@@ -236,6 +242,7 @@ footer {
   background-position: center; }
   footer .footer__titulo {
     color: white;
+    font-family: "Oxygen", sans-serif;
     font-size: 2rem;
     text-align: center;
     text-shadow: 5px 5px 5px #ee3434;
@@ -263,6 +270,7 @@ footer {
     text-decoration: none;
     padding: 0.2rem 0.3rem 0.2rem 0.3rem;
     font-size: 1.3rem;
+    font-weight: 400;
     text-shadow: 3px 3px 5px #ee3434; }
   footer .redes {
     display: flex; }
@@ -293,6 +301,7 @@ footer {
     border-radius: 3px; }
   footer .footer__creditos {
     text-align: center;
+    font-weight: 400;
     text-shadow: 2px 2px 10px #ee3434; }
 
 /*-----------------------------------------------------------------Footer----*/
@@ -302,85 +311,81 @@ footer {
   .grid {
     grid-template-columns: 20% 80%;
     grid-template-rows: auto auto auto; }
-  #header__h1 {
-    font-size: 3.5rem; }
-  .contenido__titulo {
-    font-size: 1rem; }
-  .contenido__texto {
-    line-height: 1;
-    font-size: 1rem; }
-  .carousel {
-    max-width: auto; }
-  section img {
-    max-width: auto;
-    border-radius: 10px; }
-  .aside__titulo {
-    padding-top: 0rem;
-    font-size: 1.3rem; }
-  .aside__li {
-    padding: 0rem 0rem 0rem 0rem;
-    margin: 0rem 0rem 0rem 0rem; }
-  .aside__li li {
-    padding: 0rem 0rem 0rem 0rem;
-    line-height: 1;
-    font-size: 1rem;
-    margin: 0.5rem 0rem 0rem 0rem; }
-  .footer__ul__flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
-  .footer__menu a {
-    padding: 0.3rem;
-    font-size: 0.8rem; }
-  .footer__creditos {
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0; }
-  /*Contacto*/
-  /*Form Ingresar(Aside)*/
-  .ingresar {
-    width: 90%;
-    margin-right: 5px;
-    padding: 1rem 0.2rem 1rem 0.2rem;
-    font-size: 0.8rem; }
-  .ingresar--titulo {
+    .grid #header__h1 {
+      font-size: 3.5rem; }
+    .grid .contenido__titulo {
+      font-size: 1rem; }
+    .grid .contenido__texto {
+      line-height: 1;
+      font-size: 1rem; }
+    .grid .carousel {
+      max-width: auto; }
+    .grid section img {
+      max-width: auto;
+      border-radius: 10px; }
+    .grid .aside__titulo {
+      padding-top: 0rem;
+      font-size: 1.3rem; }
+    .grid .aside__li {
+      padding: 0rem 0rem 0rem 0rem;
+      margin: 0rem 0rem 0rem 0rem; }
+    .grid .aside__li li {
+      padding: 0rem 0rem 0rem 0rem;
+      line-height: 1;
+      font-size: 1rem;
+      margin: 0.5rem 0rem 0rem 0rem; }
+    .grid .footer__ul__flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+    .grid .footer__menu a {
+      padding: 0.3rem;
+      font-size: 0.8rem; }
+    .grid .footer__creditos {
+      font-size: 0.8rem;
+      margin: 0;
+      padding: 0; }
+  /*--------------Pág Contacto--------------*/
+  .aside__ingresar {
+    padding-left: 3px; }
+  .aside__textoingresar {
+    font-size: 0.9rem;
+    margin-left: 0;
+    padding-left: 0; }
+  /*---------Formulario(Section)-----------*/
+  .formulario .formulario--titulo {
     font-size: 1.1rem; }
-  .botoningresar--submit {
-    font-size: 0.7rem; }
-  /*Formulario(Section)*/
-  .formulario--label {
+  .formulario .formulario--label {
     font-size: 0.8rem; }
-  .formulario--titulo {
-    font-size: 1.1rem; }
-  .boton--reset {
+  .formulario .boton--reset {
     font-size: 0.7rem; }
-  .botonformulario--submit {
+  .formulario .botonformulario--submit {
     font-size: 0.7rem; } }
 
 @media only screen and (min-width: 481px) and (max-width: 978px) {
   .grid {
     grid-template-columns: 30% 70%;
     grid-template-rows: auto auto auto; }
-  .header__navbar--flex {
-    justify-content: space-evenly; }
-  .header__navbar a {
-    padding: 0rem;
-    font-size: 0.9rem;
-    margin: 0.2rem; }
-  section img {
-    width: 300px; }
-  .footer__ul__flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-  .footer__menu a {
-    padding: 0.3rem;
-    font-size: 0.9rem; }
-  .footer__creditos {
-    font-size: 0.9rem;
-    margin: 0;
-    padding: 0; } }
+    .grid .header__navbar--flex {
+      justify-content: space-evenly; }
+    .grid .header__navbar a {
+      padding: 0rem;
+      font-size: 0.9rem;
+      margin: 0.2rem; }
+    .grid section img {
+      width: 300px; }
+    .grid .footer__ul__flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+    .grid .footer__menu a {
+      padding: 0.3rem;
+      font-size: 0.9rem; }
+    .grid .footer__creditos {
+      font-size: 0.9rem;
+      margin: 0;
+      padding: 0; } }
 
 @media only screen and (min-width: 979px) and (max-width: 1204px) {
   section img {
