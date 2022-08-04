@@ -38,7 +38,9 @@ body {
   height: auto; }
   .header .header__h1--flex {
     display: flex;
-    justify-content: center; }
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
   .header .header__h1 {
     font-family: "Oxygen", sans-serif;
     text-decoration: wavy;
@@ -77,6 +79,7 @@ body {
 /*-------------------------------------------------------Formulario(Section)*/
 .formulario {
   background-color: #202020;
+  box-shadow: 5px 5px 10px black;
   width: 90%;
   max-width: 650px;
   margin: auto;
@@ -312,7 +315,7 @@ footer {
     grid-template-columns: 20% 80%;
     grid-template-rows: auto auto auto; }
     .grid #header__h1 {
-      font-size: 3.5rem; }
+      font-size: 3rem; }
     .grid .contenido__titulo {
       font-size: 1rem; }
     .grid .contenido__texto {
