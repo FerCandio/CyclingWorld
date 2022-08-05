@@ -25,8 +25,8 @@
    /*--------------------------------------------------------------------GRID---*/
 body{
     background-color: rgb(0, 0, 0);
-    font-family: $font-pincipal;
-    font-weight: 600;}
+    font-family: $font-secondary;
+    font-weight: 400;}
 /*-----------------------------------------------------------------------Header---*/
 .header {
     background-color: rgb(0, 0, 0);
@@ -38,38 +38,36 @@ body{
         @include flex (row, center, center)
         }
     .header__h1{
-        font-family: $font-h1;
-        text-decoration: wavy;
+        font-family: 'Coda', cursive;
         text-transform: none;
-        background-color: rgba(0, 0, 0, 0);
         color: rgb(255, 255, 255);
-        font-size: 4.5rem;
-        font-style:normal;
-        font-weight: 800;
-        border-radius: 5px;
-        text-align: center;      
+        font-size: 5rem;
+        font-weight: 400;
+        text-align: center ;      
         text-shadow: 5px 5px 5px $color-dos;  
-        padding-bottom: 2rem;}
+        margin-bottom: 2.5rem;}
     .header__irabajo {
-        margin-left: 2rem;
-        background-color: rgba(0, 0, 0, 0.733);
-        box-shadow: 10px 10px 15px rgb(0, 0, 0);}
+        margin-left: 2rem;}
     .irabajo{
         margin-top: 0.5rem;
         padding: 0;
-        font-size: 1rem;}
-    .navbar__texto{
         font-size: 1.3rem;
+        margin-bottom: 0;
+        padding-bottom: 0;}
+    .navbar__texto{
+        font-size: 1.7rem;
         font-weight: 400;
         color: white;
-        text-shadow: 3px 3px 3px rgb(238, 52, 52);
+        text-shadow: 3px 3px 5px rgb(238, 52, 52);
         &:hover{
             text-decoration: underline;}
     }        
     .navbar__texto2{
-        font-size: 1.3rem;
-        color: rgb(0, 0, 0);
-        font-weight: 600;}
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 5px rgb(238, 52, 52);
+    }
 }
 /*--------------------------------------------------------Header------------*/
     
@@ -171,8 +169,7 @@ body{
 
 /*---------------------------------------------------------Contenido------*/
 
-section {
-    line-height: 1.5; 
+section { 
     background-color: rgb(238, 238, 238);
     padding: 1rem;
     margin-left: 0px;
@@ -185,18 +182,20 @@ section {
         color:black;
         text-align: center;
         margin: 1rem; 
-        font-weight: 600;
-        text-shadow: 4px 4px 4px rgb(0, 0, 0);   
-        font-size: 2rem;}
+        font-weight: 400;
+        text-shadow: 3px 3px 5px rgb(0, 0, 0);   
+        font-size: 2.2rem;}
     .contenido__texto{
+        line-height: 1.2; 
         color:black;
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         padding-bottom: 1rem;
         padding-left: 1rem;
-        padding-right: 1rem;}
+        padding-right: 1rem;
+        text-align: center;}
     .carousel{
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         border: 0px black;
         box-shadow: 10px 10px 20px rgb(0, 0, 0);}
     section img {
@@ -204,8 +203,8 @@ section {
         box-sizing: border-box;
         border-style: none;}
     .carousel__texto{
-        font-size: 1.3rem;
-        text-shadow: 5px 5px 10px rgb(0, 0, 0);}
+        font-size: 1.5rem;
+        text-shadow: 5px 5px 5px rgb(0, 0, 0);}
 }
 
 /*--------------------------------------------------------------Contenido----*/
@@ -215,7 +214,6 @@ aside {
     background-color: rgb(255, 70, 70);
     background-position: center;
     background-size:contain;
-    line-height: 1.5;
     padding-left: 0.5rem;
     padding-top: 1rem;
     border: inset 4px rgb(131, 131, 131);
@@ -225,17 +223,17 @@ aside {
     color: rgb(0, 0, 0);
     box-shadow: 5px 0px 10px rgb(0, 0, 0);    
     .aside__titulo {
+        font-size: 2rem;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0);
         padding-top: 1rem;
-        text-shadow: 5px 5px 15px rgb(0, 0, 0);
-        font-weight: 600;}
+        text-shadow: 3px 3px 5px rgb(0, 0, 0);
+        font-weight: 400;}
     .aside__li {
         background-color: rgba(0, 0, 0, 0);
         padding: 1rem 1rem 1rem 1rem;
         text-shadow: 2px 2px 10px rgb(0, 0, 0);
-        line-height: 2.5;
-        font-size: 1.2rem;
+        line-height: 2;
+        font-size: 1.5rem;
         list-style: none;}
 }
 
@@ -256,11 +254,11 @@ footer {
     background-position: center;
     .footer__titulo{
         color: white;
-        font-family: $font-h1;
+        font-family: 'Coda', cursive;
         font-size: 2rem;
         text-align: center;
-        text-shadow: 5px 5px 5px rgb(238,52,52);
-        font-weight: 600;}
+        text-shadow: 4px 4px 5px rgb(238,52,52);
+        font-weight: 500;}
     .footer__menu {
         list-style: none;
         text-align: center;
@@ -282,28 +280,29 @@ footer {
          text-decoration: underline;
     }
     .footer__menu a {
-        color: rgb(238,52,52);
+        color: rgb(255, 255, 255);
         text-decoration: none;
         padding: 0.2rem 0.3rem 0.2rem 0.3rem;
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         font-weight: 400;
         text-shadow: 3px 3px 5px rgb(238, 52, 52);}
     .redes{
+        color: rgb(255, 255, 255);
         display: flex;}
     .fa-twitter:before{
-        font-size: 1.6rem;
+        font-size: 2rem;
         color: rgb(0, 132, 255);
         text-shadow: 0px 0px 0px rgb(0, 0, 0);}
     .fa-facebook:before{
-        font-size: 1.6rem;
+        font-size: 2rem;
         color: rgb(0, 26, 255);
         text-shadow: 0px 0px 0px rgb(0, 0, 0);}
     .fa-instagram:before{
-        font-size: 1.6rem;
+        font-size: 2rem;
         color: rgb(255, 44, 216);
         text-shadow: 0px 0px 0px rgb(0, 0, 0);}
     .fa-youtube:before{
-        font-size: 1.6rem;
+        font-size: 2rem;
         color: rgb(255, 0, 0);
         text-shadow: 0px 0px 0px rgb(0, 0, 0);}    
     .irarriba{
@@ -312,13 +311,13 @@ footer {
         font-size: 1rem;}
     .footer__irarriba{
         margin-left: 1rem;
-        background-color: rgba(255, 255, 255, 0);
-        text-shadow: 2px 2px 10px rgb(0, 0, 0);
-        border-radius: 3px;}
+        font-size: 1.3rem;}
     .footer__creditos {
         text-align: center;
         font-weight: 400;
-        text-shadow: 2px 2px 10px rgb(238,52,52);}
+        color: white;
+        font-size: 1.3rem;
+        text-shadow: 3px 3px 3px rgb(238,52,52);}
 }
 
 /*-----------------------------------------------------------------Footer----*/

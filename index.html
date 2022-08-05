@@ -10,7 +10,7 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Oswald:wght@200&family=Oxygen:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda&family=Kelly+Slab&family=Odibee+Sans&family=Oswald:wght@300&family=Oxygen:wght@300&display=swap" rel="stylesheet">
     <!-- LINK FONT-AWESOME -->
     <script src="https://kit.fontawesome.com/c2866eb368.js" crossorigin="anonymous"></script>
     <!-- CSS BOOTSTRAP: -->
@@ -28,15 +28,11 @@
 <body>
     <div class="grid">
         <header class="header">
-            <p class="irabajo"><a id="arriba" class="header__irabajo" href="#abajo">Ir Abajo</a></p>
-            <div class="header__h1--flex">
-                <div><h1 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite header__h1" id="header__h1">CyclingWorld</h1></div>
-            </div>
-           
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2020209e;">
+          
+          <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2020209e;">
                 <div class="container-fluid">
                   <a class="navbar-brand navbar__texto" href="./index.html">
-                    <img src="./img/favicon-32x32.png" alt="" width="36" height="34" class="d-inline-block align-text-top">
+                    <img src="./img/favicon-32x32.png" alt="" width="40" height="36" class="d-inline-block align-text-top">
                     CyclingWorld
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,39 +44,43 @@
                         <a class="nav-link active navbar__texto" aria-current="page" href="./pages/bicicletas.html">Bicicletas</a>
                       </li>
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                               Ranking
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html">Masculino</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #202020;">
+                                <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html" >Masculino</a></li>
                                 <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html">Femenino</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html">WorldTour</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html">WorldTour</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Calendario
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">Masculino</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #202020;">
+                          <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">Masculino</a></li>
                             <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">Femenino</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">WorldTour</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link navbar__texto" href="./pages/contacto.html">Contacto</a>
-                    </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <button type="button" class="btn btn-dark me-2 navbar__texto" type="button">Ingresar</button>
-                      <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                      <button type="button" class="btn btn-dark me-2 navbar__texto" type="submit">Buscar</button>
-                    </form>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link navbar__texto" href="./pages/contacto.html">Contacto</a>
+                      </li>
+                      </ul>
+                      <form class="d-flex" role="search">
+                        <button type="button" class="btn btn-dark me-2 navbar__texto" type="button">Ingresar</button>
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                       <button type="button" class="btn btn-dark me-2 navbar__texto" type="submit">Buscar</button>
+                      </form>
+                    </div>
                   </div>
+                </nav>
+                <p class="irabajo"><a id="arriba" class="header__irabajo" href="#abajo">Ir Abajo</a></p>
+                <div class="header__h1--flex">
+                    <div><h1 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite header__h1" id="header__h1">CyclingWorld</h1></div>
                 </div>
-            </nav>
         </header>
                   <!-----------------------------------------------------Header-->
                   <!----------------------------------------------------Section-->
@@ -171,7 +171,7 @@
                     <!----------------------------------------------------Aside---->
                     <!----------------------------------------------------Footer---->
         <footer class="footer">            
-                <h4 class="footer__titulo">CyclingWorld</h4>
+                <h2 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite footer__titulo">CyclingWorld</h2>
                 <ul class="footer__menu">
                     <div class="footer__ul__flex">
                         <div><li><a href="#">Quiénes Somos</a></li></div>
