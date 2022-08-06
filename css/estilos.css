@@ -25,7 +25,7 @@
 
 /*--------------------------------------------------------------------GRID---*/
 body {
-  background-color: black;
+  background-color: #181818;
   font-family: "Odibee Sans", cursive;
   font-weight: 400; }
 
@@ -35,7 +35,9 @@ body {
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
-  height: auto; }
+  height: auto;
+  border: solid 7px #181818;
+  box-shadow: 0px 10px 20px black; }
   .header .header__h1--flex {
     display: flex;
     flex-direction: row;
@@ -212,7 +214,8 @@ aside {
   background-size: contain;
   padding-left: 0.5rem;
   padding-top: 1rem;
-  border-radius: 0px;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
   color: black;
@@ -239,8 +242,8 @@ footer {
   text-decoration: none;
   padding: 1rem;
   font-weight: 600;
-  border: inset 4px #838383;
-  box-shadow: 10px 10px 20px black;
+  border: solid 7px #181818;
+  box-shadow: 0px -10px 20px black;
   height: auto;
   background-repeat: repeat;
   background-size: contain;
