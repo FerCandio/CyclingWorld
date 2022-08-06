@@ -161,47 +161,54 @@ body {
   color: #ee3434;
   text-shadow: 2px 2px 3px black; }
 
+.aside__flex--ingresar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
 /*-------------------------------------------------------Ingresar(Aside)---*/
 /*-----------------------------------------------------Fin Pag CONTACTO--------*/
 /*-----------------------------------------------------Inicio Main Pag INDEX---*/
 /*---------------------------------------------------------Contenido------*/
-section {
+.main--index {
   background-color: #181818;
-  padding: 1rem;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 1rem;
   border: none;
-  border-radius: 0px; }
-  section .contenido__titulo {
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px black; }
+  .main--index .main__flex--index {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main--index .contenido__titulo {
     color: white;
     text-align: center;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     font-weight: 400;
     text-shadow: 3px 3px 5px #ee3434;
     font-size: 2.2rem; }
-  section .contenido__texto {
+  .main--index .contenido__texto {
     line-height: 1.2;
     color: white;
     text-shadow: 3px 3px 5px black;
     font-size: 1.7rem;
-    margin-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center; }
-  section .carousel {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: justify; }
+  .main--index .carousel {
     margin-left: 0rem;
     margin-right: 0rem;
     border: 0px black;
     border-radius: 10px;
     box-shadow: 10px 10px 20px black; }
-  section .carousel__img--index {
+  .main--index .carousel__img--index {
     border-radius: 10px;
     border: 0px black;
     box-sizing: border-box;
     border-style: none; }
-  section .carousel__texto {
+  .main--index .carousel__texto {
     color: white;
     font-size: 1.5rem;
     text-shadow: 3px 3px 3px black; }
@@ -228,9 +235,9 @@ aside {
     font-weight: 400; }
   aside .aside__li {
     background-color: rgba(0, 0, 0, 0);
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 0rem 1rem 0rem;
     text-shadow: 2px 2px 10px black;
-    line-height: 2;
+    line-height: 1.7;
     font-size: 1.5rem;
     list-style: none; }
 
@@ -242,7 +249,7 @@ footer {
   text-decoration: none;
   padding: 1rem;
   font-weight: 600;
-  border: solid 7px #181818;
+  border: solid 5px #181818;
   box-shadow: 0px -10px 20px black;
   height: auto;
   background-repeat: repeat;
@@ -359,22 +366,28 @@ footer {
   .aside__ingresar {
     padding-left: 3px; }
   .aside__textoingresar {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-left: 0;
     padding-left: 0; }
+  .aside__botoningresar {
+    font-size: 1rem; }
   /*---------Formulario(Section)-----------*/
   .formulario .formulario--titulo {
     font-size: 1.1rem; }
   .formulario .formulario--label {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   .formulario .boton--reset {
-    font-size: 0.7rem; }
+    font-size: 1rem; }
   .formulario .botonformulario--submit {
-    font-size: 0.7rem; } }
+    font-size: 1rem; }
+  .formulario .formulario--input {
+    font-size: 1rem; }
+  .formulario .formulario--textarea {
+    font-size: 1rem; } }
 
 @media only screen and (min-width: 481px) and (max-width: 978px) {
   .grid {
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: auto auto auto; }
     .grid .header__navbar--flex {
       justify-content: space-evenly; }
@@ -394,7 +407,13 @@ footer {
     .grid .footer__creditos {
       font-size: 0.9rem;
       margin: 0;
-      padding: 0; } }
+      padding: 0; }
+    .grid .aside__textoingresar {
+      font-size: 1.5rem; }
+    .grid .aside__flex--ingresar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; } }
 
 @media only screen and (min-width: 979px) and (max-width: 1204px) {
   section img {
