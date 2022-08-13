@@ -17,20 +17,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- LINK ANIMATE.CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- CSS PROPIO: -->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- LINK AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <!-- FAVICON -->
     <link rel="icon" href="../img/favicon-32x32.png">
+    <!-- CSS PROPIO: -->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
     <div class="grid">
           <header class="header">
             
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2020209e;">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #000000;" data-aos="zoom-out" data-aos-duration="2000">
                 <div class="container-fluid">
                   <a class="navbar-brand navbar__texto" href="../index.html">
-                    <img src="../img/favicon-32x32.png" alt="" width="40" height="36" class="d-inline-block align-text-top">
+                    <img src="../img/favicon-32x32.png" alt="" width="36" height="32" class="d-inline-block align-text-top">
                     CyclingWorld
                   </a>
                   <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,22 +70,26 @@
                       </li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <button type="button" class="btn btn-dark me-2 navbar__texto" type="button">Ingresar</button>
+                      <button type="button" class="btn btn-dark me-2 navbar__texto btn-sm" type="button" style="background-color: #20202000;">Ingresar</button>
                       <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                      <button type="button" class="btn btn-dark me-2 navbar__texto" type="submit">Buscar</button>
+                      <button type="button" class="btn btn-dark me-2 navbar__texto btn-sm" type="submit" style="background-color: #20202000;">Buscar</button>
                     </form>
                   </div>
                 </div>
               </nav>
-              <p><a id="arriba" class="header__irabajo" href="#abajo">Ir Abajo</a></p>
-              <div class="header__h1--flex">
-                  <div><h1 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite header__h1" id="header__h1">CyclingWorld</h1></div>
+              
+              <div class="portada">
+                <div data-aos="zoom-out" data-aos-duration="2000">
+                  <h1 class="animate__animated animate__pulse animate__delay-2s animate__slow animate__infinite portada__h1" id="portada__h1">CyclingWorld</h1>
+                </div>
               </div>
         </header>
                   
-        
+        <main class="main--ranking">
+        </main>
+
         <footer class="footer">           
-          <h2 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite footer__titulo">CyclingWorld</h2>
+          <h2 class="animate__animated animate__pulse animate__delay-0s animate__slow animate__infinite footer__titulo">CyclingWorld</h2>
               <ul class="footer__menu">
                   <div class="footer__ul__flex">
                       <div><li><a href="#">Quiénes Somos</a></li></div>
@@ -129,7 +135,12 @@
           
       </footer>
     </div>
-    <!-- JavaScript Bundle with Popper -->
+    <!-- LINK AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <!-- JavaScript de Bootstrap-->
     git<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     display: grid;
     grid-template-areas: 
     "header header"
-    "aside section"
+    "aside main"
     "footer footer";
     grid-template-columns: 20% 80%;
     grid-template-rows: auto auto auto;
@@ -17,72 +17,225 @@
         grid-area: header;}
     aside{
         grid-area: aside;}
-    section{
-        grid-area: section;}
+    main{
+        grid-area: main;}
     footer{
         grid-area: footer;}
 }
-   /*--------------------------------------------------------------------GRID---*/
+   /*-------------------------------------------------------GRID------------------*/
 body{
     background-color: #181818;
     font-family: $font-secondary;
-    font-weight: 400;}
-/*-----------------------------------------------------------------------Header---*/
+    font-weight: 400;
+    overflow-x: hidden;}
+/*----------------------------------------------------------HEADER----------------*/
 .header {
-    background-color: #000000;
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: center;
-    height: auto;
-    border: solid 7px #181818;
-    box-shadow: 0px 10px 20px rgb(0, 0, 0);
-    .header__h1--flex{
-        @include flex (row, center, center)
-        }
-    .header__h1{
-        font-family: 'Coda', cursive;
-        text-transform: none;
-        color: rgb(255, 255, 255);
-        font-size: 5rem;
-        font-weight: 400;
-        text-align: center ;      
-        text-shadow: 5px 5px 5px $color-dos;  
-        margin-bottom: 2.5rem;}
-    .header__irabajo {
-        margin-left: 1rem;
-        font-size: 1.3rem;}
+    .navbar{
+        max-height: 3.5rem;
+        box-shadow: 0px 5px 10px black;}
     .navbar__texto{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: 400;
         color: white;
         text-shadow: 3px 3px 5px rgb(238, 52, 52);
         &:hover{
-            text-decoration: underline;}
-    }        
+            text-decoration: underline;}}        
     .navbar__texto2{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: 400;
         color: rgb(255, 255, 255);
-        text-shadow: 3px 3px 5px rgb(238, 52, 52);
-    }
+        text-shadow: 3px 3px 5px rgb(238, 52, 52);}
+    .portada{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: fixed;
+        background-size: cover;
+        background-image: url(../img/fondo4.jpeg);
+        height: 100vh;}
+    .portada__h1{
+        font-family: 'Coda', cursive;
+        text-transform: none;
+        color: white;
+        font-size: 6rem;
+        font-weight: 400;      
+        text-shadow: 5px 5px 10px black;}
 }
-/*--------------------------------------------------------Header------------*/
-    
+/*--------------------------------------------------------HEADER------------*/
+
+/*--------------------------------------------------------FOOTER------------*/
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(238,52,52);
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 600;
+    box-shadow: 0px -10px 20px rgb(0, 0, 0);
+    height: auto;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    .footer__titulo{
+        color: white;
+        font-family: 'Coda', cursive;
+        font-size: 2.2rem;
+        text-align: center;
+        text-shadow: 3px 3px 5px rgb(238,52,52);
+        font-weight: 500;}
+    .footer__menu {
+        list-style: none;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        padding-left: 0;}
+    .footer__ul__flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;}
+    .footer__menu li{
+        border: 2px solid rgba(0, 0, 0, 0); 
+        transition: all 0.5s;
+        border-radius: 5px;        
+        &:hover{
+            text-decoration: underline;}
+    }
+    .list-inline-item a i:hover{
+         text-decoration: underline;
+    }
+    .footer__menu a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-shadow: 3px 3px 5px rgb(238, 52, 52);}
+    .redes{
+        color: rgb(255, 255, 255);
+        display: flex;}
+    .fa-twitter:before{
+        font-size: 2rem;
+        color: rgb(0, 132, 255);
+        text-shadow: 0px 0px 0px rgb(0, 0, 0);}
+    .fa-facebook:before{
+        font-size: 2rem;
+        color: rgb(0, 26, 255);
+        text-shadow: 0px 0px 0px rgb(0, 0, 0);}
+    .fa-instagram:before{
+        font-size: 2rem;
+        color: rgb(255, 44, 216);
+        text-shadow: 0px 0px 0px rgb(0, 0, 0);}
+    .fa-youtube:before{
+        font-size: 2rem;
+        color: rgb(255, 0, 0);
+        text-shadow: 0px 0px 0px rgb(0, 0, 0);}
+    .footer__irarriba{
+        margin-left: 0.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        padding-bottom: 0;}
+    .irarriba{
+        margin-bottom: 0.5rem;
+        padding-bottom: 0;}
+    .footer__creditos {
+        text-align: center;
+        font-weight: 400;
+        color: rgb(238,52,52);
+        font-size: 1.3rem;}
+}
+/*--------------------------------------------------------FOOTER------------*/
+
+/*-------------------------------------------------------PAG INDEX----------*/
+
+/*---------------------------------------------------------CONTENIDO--------*/
+
+.main--index { 
+    background-color: #181818;
+    .main__flex--index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+    .contenido__titulo {
+        color:rgb(255, 255, 255);
+        text-align: center;
+        margin: 1rem 1rem 1rem 1rem; 
+        font-weight: 400;
+        text-shadow: 3px 3px 5px rgb(238,52,52);  
+        font-size: 2.2rem;}
+    .contenido__texto{
+        line-height: 1.2; 
+        color:rgb(255, 255, 255);
+        text-shadow: 3px 3px 5px rgb(0, 0, 0);
+        font-size: 1.7rem;
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align:justify;}
+    .carousel{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        border: 0px black;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgb(0, 0, 0);}
+    .carousel__img--index{
+        border-radius: 10px;
+        border: 0px black;
+        box-sizing: border-box;
+        border-style: none;}
+    .carousel__texto{
+        color: white;
+        font-size: 1.5rem;
+        text-shadow: 3px 3px 3px black;}
+}
+
+/*--------------------------------------------------------------CONTENIDO----*/
+
+/*-----------------------------------------------------------------ASIDE----*/
+
+aside {
+    background-color: rgb(255, 70, 70);
+    background-position: center;
+    background-size:contain;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 0px 10px rgb(0, 0, 0);    
+    .aside__titulo {
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 1rem;
+        text-shadow: 3px 3px 5px rgb(0, 0, 0);
+        font-weight: 400;}
+    .aside__li {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 1rem 0rem 1rem 0rem;
+        text-shadow: 2px 2px 10px rgb(0, 0, 0);
+        line-height: 1.7;
+        font-size: 1.5rem;
+        list-style: none;}
+}
+/*-------------------------------------------------------PAG INDEX----------*/
+
 /*-------------------------------------------------------PAG CONTACTO-------*/
 
-/*-------------------------------------------------------Formulario(Section)*/
-
-.formulario{
-    background-color: #202020;
-    box-shadow: 5px 5px 10px black;
-    width: 90%;
-    max-width: 650px;
-    margin: auto;
-    padding: 1rem 2rem 1rem 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-    padding-bottom: 3rem;
+/*-------------------------------------------------------FORMULARIO (SECTION)*/
+.main--contacto { 
+    background-color: #181818;
+    .formulario{
+        background-color: #202020;
+        box-shadow: 5px 5px 10px black;
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        padding: 1rem 2rem 1rem 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 5px;
+        padding-bottom: 3rem;}
     .formulario .formulario--label{
         display: block;
         position: relative;}
@@ -148,8 +301,9 @@ body{
         float: left;}
 }
 
-/*------------------------------------------------Formulario(Section)-------*/
-/*-----------------------------------------------------Ingresar(Aside)-----*/
+/*------------------------------------------------FORMULARIO(SECTION)-------*/
+
+/*-----------------------------------------------------INGRESAR(ASIDE)------*/
 
 .mb-3{
     margin-right: 0.5rem;}
@@ -172,172 +326,20 @@ body{
     align-items: center;
 }
 
-/*-------------------------------------------------------Ingresar(Aside)---*/
+/*-------------------------------------------------------INGRESAR(ASIDE)-------*/
 
-/*-----------------------------------------------------Fin Pag CONTACTO--------*/
-/*-----------------------------------------------------Inicio Main Pag INDEX---*/
+/*-----------------------------------------------------FIN PAG CONTACTO--------*/
 
-/*---------------------------------------------------------Contenido------*/
+/*-------------------------------------------------INICIO PAG BICICLETAS----------*/
 
-.main--index { 
-    background-color: #181818;
-    margin: 1rem;  
-    border: none; 
-    border-radius: 10px;
-    box-shadow: 1px 1px 20px rgb(0, 0, 0);
-    .main__flex--index{
-        display: flex;
-        flex-direction: column;
-        align-items: center;}
-    .contenido__titulo {
-        color:rgb(255, 255, 255);
-        text-align: center;
-        margin: 1rem 1rem 1rem 1rem; 
-        font-weight: 400;
-        text-shadow: 3px 3px 5px rgb(238,52,52);  
-        font-size: 2.2rem;}
-    .contenido__texto{
-        line-height: 1.2; 
-        color:rgb(255, 255, 255);
-        text-shadow: 3px 3px 5px rgb(0, 0, 0);
-        font-size: 1.7rem;
-        margin-top: 1rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        text-align:justify;}
-    .carousel{
-        margin-left: 0rem;
-        margin-right: 0rem;
-        border: 0px black;
-        border-radius: 10px;
-        box-shadow: 10px 10px 20px rgb(0, 0, 0);}
-    .carousel__img--index{
-        border-radius: 10px;
-        border: 0px black;
-        box-sizing: border-box;
-        border-style: none;}
-    .carousel__texto{
-        color: white;
-        font-size: 1.5rem;
-        text-shadow: 3px 3px 3px black;}
-}
 
-/*--------------------------------------------------------------Contenido----*/
-/*-----------------------------------------------------------------Aside----*/
+/*-------------------------------------------------INICIO PAG CALENDARIO----------*/
 
-aside {
-    background-color: rgb(255, 70, 70);
-    background-position: center;
-    background-size:contain;
-    padding-left: 0.5rem;
-    padding-top: 1rem;
-    margin-bottom: 0.5rem;
-    border-radius: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    box-shadow: 5px 0px 10px rgb(0, 0, 0);    
-    .aside__titulo {
-        font-size: 2rem;
-        text-align: center;
-        padding-top: 1rem;
-        text-shadow: 3px 3px 5px rgb(0, 0, 0);
-        font-weight: 400;}
-    .aside__li {
-        background-color: rgba(0, 0, 0, 0);
-        padding: 1rem 0rem 1rem 0rem;
-        text-shadow: 2px 2px 10px rgb(0, 0, 0);
-        line-height: 1.7;
-        font-size: 1.5rem;
-        list-style: none;}
-}
 
-/*-----------------------------------------------------------------Aside----*/
-/*-----------------------------------------------------------------Footer----*/
+/*-------------------------------------------------INICIO PAG RANKING----------*/
 
-footer {
-    background-color: rgb(0, 0, 0);
-    color: rgb(238,52,52);
-    text-decoration: none;
-    padding: 1rem;
-    font-weight: 600;
-    border: solid 5px #181818;
-    box-shadow: 0px -10px 20px rgb(0, 0, 0);
-    height: auto;
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: center;
-    .footer__titulo{
-        color: white;
-        font-family: 'Coda', cursive;
-        font-size: 2.2rem;
-        text-align: center;
-        text-shadow: 3px 3px 5px rgb(238,52,52);
-        font-weight: 500;}
-    .footer__menu {
-        list-style: none;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-        padding-left: 0;}
-    .footer__ul__flex{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;}
-    .footer__menu li{
-        border: 2px solid rgba(0, 0, 0, 0); 
-        transition: all 0.5s;
-        border-radius: 5px;        
-        &:hover{
-            text-decoration: underline;}
-    }
-    .list-inline-item a i:hover{
-         text-decoration: underline;
-    }
-    .footer__menu a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        padding: 0.2rem 0.3rem 0.2rem 0.3rem;
-        font-size: 1.7rem;
-        font-weight: 400;
-        text-shadow: 3px 3px 5px rgb(238, 52, 52);}
-    .redes{
-        color: rgb(255, 255, 255);
-        display: flex;}
-    .fa-twitter:before{
-        font-size: 2rem;
-        color: rgb(0, 132, 255);
-        text-shadow: 0px 0px 0px rgb(0, 0, 0);}
-    .fa-facebook:before{
-        font-size: 2rem;
-        color: rgb(0, 26, 255);
-        text-shadow: 0px 0px 0px rgb(0, 0, 0);}
-    .fa-instagram:before{
-        font-size: 2rem;
-        color: rgb(255, 44, 216);
-        text-shadow: 0px 0px 0px rgb(0, 0, 0);}
-    .fa-youtube:before{
-        font-size: 2rem;
-        color: rgb(255, 0, 0);
-        text-shadow: 0px 0px 0px rgb(0, 0, 0);}
-    .footer__irarriba{
-        margin-left: 0.5rem;
-        font-size: 1.3rem;
-        margin-bottom: 0;
-        padding-bottom: 0;}
-    .irarriba{
-        margin-bottom: 0.5rem;
-        padding-bottom: 0;}
-    .footer__creditos {
-        text-align: center;
-        font-weight: 400;
-        color: rgb(238,52,52);
-        font-size: 1.3rem;}
-}
 
-/*-----------------------------------------------------------------Footer----*/
-
-/*-----------------------------------------------------------MediaQueries----*/
+/*-----------------------------------------------------------MEDIA QUERIES------*/
 
 /*Mobile*/
 

@@ -19,147 +19,152 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- LINK AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <!-- CSS PROPIO: -->
-    <link rel="stylesheet" href="./css/estilos.css">
     <!-- FAVICON -->
     <link rel="icon" href="./img/favicon-32x32.png">
+    <!-- CSS PROPIO: -->
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
-                      <!-- CLAVE WEBHOST: N2L$64RDLLQpbGctdWYB -->
+
 <body>
     <div class="grid">
         <header class="header">
-          
-          <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181818;">
-                <div class="container-fluid">
-                  <a class="navbar-brand navbar__texto" href="./index.html">
-                    <img src="./img/favicon-32x32.png" alt="" width="40" height="36" class="d-inline-block align-text-top">
-                    CyclingWorld
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active navbar__texto" aria-current="page" href="./pages/bicicletas.html">Bicicletas</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                              Ranking
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #202020;">
-                                <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html" >Masculino</a></li>
-                                <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html">Femenino</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html">WorldTour</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Calendario
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #202020;">
-                          <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">Masculino</a></li>
-                            <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">Femenino</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">WorldTour</a></li>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #000000;" data-aos="zoom-out" data-aos-duration="2000">
+                  <div class="container-fluid">
+                    <a class="navbar-brand navbar__texto" href="./index.html">
+                      <img src="./img/favicon-32x32.png" alt="" width="36" height="32" class="d-inline-block align-text-top">
+                      CyclingWorld
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active navbar__texto" aria-current="page" href="./pages/bicicletas.html">Bicicletas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                Ranking
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #202020;">
+                                  <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html" >Masculino</a></li>
+                                  <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html">Femenino</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item navbar__texto2" href="./pages/ranking.html">WorldTour</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Calendario
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #202020;">
+                            <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">Masculino</a></li>
+                              <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">Femenino</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item navbar__texto2" href="./pages/calendario.html">WorldTour</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link navbar__texto" href="./pages/contacto.html">Contacto</a>
+                        </li>
                         </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link navbar__texto" href="./pages/contacto.html">Contacto</a>
-                      </li>
-                      </ul>
-                      <form class="d-flex" role="search">
-                        <button type="button" class="btn btn-dark me-2 navbar__texto" type="button">Ingresar</button>
-                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                       <button type="button" class="btn btn-dark me-2 navbar__texto" type="submit">Buscar</button>
-                      </form>
+                        <form class="d-flex" role="search">
+                          <button type="button" class="btn btn-dark me-2 navbar__texto btn-sm" type="button" style="background-color: #20202000;">Ingresar</button>
+                          <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <button type="button" class="btn btn-dark me-2 navbar__texto btn-sm" type="submit" style="background-color: #20202000;">Buscar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+                  <div class="portada">
+                    <div data-aos="zoom-out" data-aos-duration="2000">
+                      <h1 class="animate__animated animate__pulse animate__delay-2s animate__slow animate__infinite portada__h1" id="portada__h1">CyclingWorld</h1>
                     </div>
                   </div>
-                </nav>
-                <p class="irabajo"><a id="arriba" class="header__irabajo" href="#abajo">Ir Abajo</a></p>
-                <div class="header__h1--flex">
-                    <div><h1 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite header__h1" id="header__h1">CyclingWorld</h1></div>
-                </div>
-        </header>
+              </header>
                   <!-----------------------------------------------------Header-->
                   <!----------------------------------------------------Section-->
         <main class="main--index">
-            <div class="main__flex--index">             
-              <h3 class="contenido__titulo">Análisis semanal - Tour de France 2022</h3>
-              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                      </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./img/fa55e654-e6a2-4930-ae5d-b989cdfbc98d_16-9-discover-aspect-ratio_default_0.jpg" class="d-block w-100 carousel__img--index" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5 class="carousel__texto">Maillot Jaune</h5>
-                            <p class="carousel__texto">El pelotón en pleno ascenso comandado por el líder</p>
+            
+            <div data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-sine">
+              <div class="main__flex--index">             
+                <h3 class="contenido__titulo">Análisis semanal - Tour de France 2022</h3>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./img/fa55e654-e6a2-4930-ae5d-b989cdfbc98d_16-9-discover-aspect-ratio_default_0.jpg" class="d-block w-100 carousel__img--index" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="carousel__texto">Maillot Jaune</h5>
+                              <p class="carousel__texto">El pelotón en pleno ascenso comandado por el líder</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/20200920201302_roglic-pogacar-porte_amp_w1200.jpg" class="d-block w-100 carousel__img--index" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="carousel__texto">Podio final</h5>
+                              <p class="carousel__texto">Entrega de galardones en los Campos Eliseos</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/LFMTvyRBZYU53iU6Ve5kJ3.jpg" class="d-block w-100 carousel__img--index" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="carousel__texto">Concentración</h5>
+                              <p class="carousel__texto">El líder comandado la fuga</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/YO4YD2MNUMNZDGXLYAMQT5QHQQ.jpg" class="d-block w-100 carousel__img--index" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="carousel__texto">Victoria eslovena</h5>
+                              <p class="carousel__texto">El festejo habitual y la confirmación del liderato</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/sporting-news-2022-photo-with-watermark-edb51118-44ac-4ece-ae19-e79f566a8c4b.jpg" class="d-block w-100 carousel__img--index" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="carousel__texto">El Arco a la vista</h5>
+                              <p class="carousel__texto">Llegada masiva en los Campos Eliseos</p>
+                            </div>
                           </div>
                         </div>
-                        <div class="carousel-item">
-                          <img src="./img/20200920201302_roglic-pogacar-porte_amp_w1200.jpg" class="d-block w-100 carousel__img--index" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5 class="carousel__texto">Podio final</h5>
-                            <p class="carousel__texto">Entrega de galardones en los Campos Eliseos</p>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./img/LFMTvyRBZYU53iU6Ve5kJ3.jpg" class="d-block w-100 carousel__img--index" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5 class="carousel__texto">Concentración</h5>
-                            <p class="carousel__texto">El líder comandado la fuga</p>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./img/YO4YD2MNUMNZDGXLYAMQT5QHQQ.jpg" class="d-block w-100 carousel__img--index" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5 class="carousel__texto">Victoria eslovena</h5>
-                            <p class="carousel__texto">El festejo habitual y la confirmación del liderato</p>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./img/sporting-news-2022-photo-with-watermark-edb51118-44ac-4ece-ae19-e79f566a8c4b.jpg" class="d-block w-100 carousel__img--index" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5 class="carousel__texto">El Arco a la vista</h5>
-                            <p class="carousel__texto">Llegada masiva en los Campos Eliseos</p>
-                          </div>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>  
-                    <p class="contenido__texto">La 108.ª edición del Tour de Francia fue una carrera
-                      de ciclismo en ruta por etapas que se celebró entre el 26 de junio y el 18 de 
-                      julio de 2022 con inicio en Brest y final en París. El recorrido 
-                      constó de un total de 21 etapas sobre una distancia total de 3414,4 km.
-                      La carrera fue la segunda y más importante de las denominadas Grandes 
-                      Vueltas de la temporada y formó parte del circuito UCI WorldTour 2021 dentro 
-                      de la categoría 2.UWT siendo la vigésima competición del calendario de 
-                      máxima categoría mundial. Por segundo año consecutivo, el esloveno Tadej Pogačar
-                      del UAE Emirates se llevó la victoria final. En esta ocasión estuvo acompañado
-                      en el podio por el danés Jonas Vingegaard del Jumbo-Visma y el ecuatoriano Richard
-                      Carapaz del INEOS Grenadiers, que finalizaron en segunda y tercera posición
-                      respectivamente. Además, Mark Cavendish logró igualar a Eddy Merckx 
-                      como el ciclista que más victorias de etapas había conseguido en la historia de la
-                      prueba con un total de 34.</p>
-             </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>  
+                      <p class="contenido__texto">La 108.ª edición del Tour de Francia fue una carrera
+                        de ciclismo en ruta por etapas que se celebró entre el 26 de junio y el 18 de 
+                        julio de 2022 con inicio en Brest y final en París. El recorrido 
+                        constó de un total de 21 etapas sobre una distancia total de 3414,4 km.
+                        La carrera fue la segunda y más importante de las denominadas Grandes 
+                        Vueltas de la temporada y formó parte del circuito UCI WorldTour 2021 dentro 
+                        de la categoría 2.UWT siendo la vigésima competición del calendario de 
+                        máxima categoría mundial. Por segundo año consecutivo, el esloveno Tadej Pogačar
+                        del UAE Emirates se llevó la victoria final. En esta ocasión estuvo acompañado
+                        en el podio por el danés Jonas Vingegaard del Jumbo-Visma y el ecuatoriano Richard
+                        Carapaz del INEOS Grenadiers, que finalizaron en segunda y tercera posición
+                        respectivamente. Además, Mark Cavendish logró igualar a Eddy Merckx 
+                        como el ciclista que más victorias de etapas había conseguido en la historia de la
+                        prueba con un total de 34.</p>
+              </div>
+            </div>
         </main>
                     <!----------------------------------------------------Section-->
                     <!----------------------------------------------------Aside---->
-        <aside class="aside">            
+        
+        <aside class="aside">   
+          <div data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">         
             <h3 class="aside__titulo">Clasificación General:</h3>
             <ul class="aside__li">
                 <li>Tadej Pogacar (SLO)</li>
@@ -182,12 +187,13 @@
                 <li>Ruben Guerreiro (POR)</li>
                 <li>Wout van Aert (BEL)</li>
                 <li>Bauke Mollema (NED)</li>
-            </ul>        
+            </ul>     
+            </div>   
         </aside>            
                     <!----------------------------------------------------Aside---->
                     <!----------------------------------------------------Footer---->
         <footer class="footer">            
-                <h2 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite footer__titulo">CyclingWorld</h2>
+                <h2 class="animate__animated animate__pulse animate__delay-2s animate__slow animate__infinite footer__titulo">CyclingWorld</h2>
                 <ul class="footer__menu">
                     <div class="footer__ul__flex">
                         <div><li><a href="#">Quiénes Somos</a></li></div>
