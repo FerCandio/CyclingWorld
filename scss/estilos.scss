@@ -8,15 +8,15 @@
 .grid{
     display: grid;
     grid-template-areas: 
-    "header header"
-    "aside main"
-    "footer footer";
-    grid-template-columns: 20% 80%;
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
     header{
         grid-area: header;}
-    aside{
-        grid-area: aside;}
+    // aside{
+    //     grid-area: aside;}
     main{
         grid-area: main;}
     footer{
@@ -47,7 +47,7 @@ body{
         text-shadow: 3px 3px 5px rgb(238, 52, 52);}
     .portada{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background: fixed;
@@ -330,7 +330,134 @@ aside {
 
 /*-----------------------------------------------------FIN PAG CONTACTO--------*/
 
-/*-------------------------------------------------INICIO PAG BICICLETAS----------*/
+/*-------------------------------------------------INICIO PAG TIENDA----------*/
+.main__titulo--tienda{
+    color: white;
+    text-shadow: 3px 3px 5px rgb(238, 52, 52);
+    font-size: 2.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.bicicletasflex--tienda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardbicicletas{
+    position: relative;
+    width: 380px;
+    height: 280px;
+    max-width: 380px;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.cardface__bicicletas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;   
+}
+
+.cardfront{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 5px 5px 10px black;
+
+}
+
+.cardimg__bicicletas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardtitulofront__bicicletas {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(238, 52, 52);
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    line-height: 45px;
+}
+
+.cardback{
+    transform: perspective(600px) rotateY(180deg);
+    background: #181818;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px black;
+    
+}
+
+.cardtituloback__bicicletas{
+    width: 100%;
+    height: 45px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(238, 52, 52);
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    line-height: 45px;
+}
+
+.cardlink__bicicletas{
+    border-top: solid 1px white;
+    height: 30px;
+    line-height: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.cardli__bicicletas{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.cardbicicletas:hover .cardfront{
+    transform: perspective(600px) rotateY(180deg) ;
+}
+
+.cardbicicletas:hover .cardback{
+    transform: perspective(600px) rotateY(360deg) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-------------------------------------------------INICIO PAG CALENDARIO----------*/
