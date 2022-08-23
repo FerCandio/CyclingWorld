@@ -47,6 +47,14 @@ body {
   color: white;
   text-shadow: 3px 3px 5px #ee3434; }
 
+.header .header__irabajo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600; }
+
 .header .portada {
   display: flex;
   flex-direction: column;
@@ -73,7 +81,7 @@ footer {
   text-decoration: none;
   padding: 1rem;
   font-weight: 600;
-  box-shadow: 0px -10px 20px black;
+  box-shadow: 0px 10px 20px black;
   height: auto;
   background-repeat: repeat;
   background-size: contain;
@@ -107,7 +115,7 @@ footer {
     color: white;
     text-decoration: none;
     padding: 0.2rem 0.3rem 0.2rem 0.3rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     text-shadow: 3px 3px 5px #ee3434; }
   footer .redes {
@@ -130,12 +138,11 @@ footer {
     color: red;
     text-shadow: 0px 0px 0px black; }
   footer .footer__irarriba {
+    display: flex;
+    justify-content: center;
     margin-left: 0.5rem;
     font-size: 1.3rem;
     margin-bottom: 0;
-    padding-bottom: 0; }
-  footer .irarriba {
-    margin-bottom: 0.5rem;
     padding-bottom: 0; }
   footer .footer__creditos {
     text-align: center;
@@ -185,35 +192,8 @@ footer {
     text-shadow: 3px 3px 3px black; }
 
 /*--------------------------------------------------------------CONTENIDO----*/
-/*-----------------------------------------------------------------ASIDE----*/
-aside {
-  background-color: #ff4646;
-  background-position: center;
-  background-size: contain;
-  padding-left: 0.5rem;
-  padding-top: 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: 10px;
-  box-sizing: border-box;
-  text-align: center;
-  color: black;
-  box-shadow: 5px 0px 10px black; }
-  aside .aside__titulo {
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 1rem;
-    text-shadow: 3px 3px 5px black;
-    font-weight: 400; }
-  aside .aside__li {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 1rem 0rem 1rem 0rem;
-    text-shadow: 2px 2px 10px black;
-    line-height: 1.7;
-    font-size: 1.5rem;
-    list-style: none; }
-
-/*-------------------------------------------------------PAG INDEX----------*/
-/*-------------------------------------------------------PAG CONTACTO-------*/
+/*-------------------------------------------------------FIN PAG INDEX----------*/
+/*-------------------------------------------------------INICIO PAG CONTACTO-------*/
 /*-------------------------------------------------------FORMULARIO (SECTION)*/
 .main--contacto {
   background-color: #181818;
@@ -293,35 +273,88 @@ aside {
     float: left; }
 
 /*------------------------------------------------FORMULARIO(SECTION)-------*/
-/*-----------------------------------------------------INGRESAR(ASIDE)------*/
-.mb-3 {
-  margin-right: 0.5rem; }
+/*-----------------------------------------------------FIN PAG CONTACTO--------*/
+/*-------------------------------------------------INICIO PAG TIENDA----------*/
+.imgsponsors {
+  max-width: 100%; }
 
-.aside__textoingresar {
-  color: black;
-  text-shadow: 2px 2px 3px black;
-  font-size: 1.7rem; }
+.titulosponsors {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 3px #ee3434;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  padding: 0.5rem;
+  background-color: black; }
 
-.aside__botoningresar {
-  font-size: 1.5rem;
-  color: #ee3434;
-  text-shadow: 2px 2px 3px black; }
-
-.aside__flex--ingresar {
+.main__divencabezado--tienda {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  padding: 1rem 0rem 1rem 0rem;
+  background: black; }
 
-/*-------------------------------------------------------INGRESAR(ASIDE)-------*/
-/*-----------------------------------------------------FIN PAG CONTACTO--------*/
-/*-------------------------------------------------INICIO PAG TIENDA----------*/
-.main__titulo--tienda {
+.boton--tienda {
+  font-size: 1.5rem;
   color: white;
-  text-shadow: 3px 3px 5px #ee3434;
+  text-shadow: 3px 3px 3px black; }
+
+.offcanvas--tienda {
+  display: flex;
+  justify-content: center; }
+
+.botonoffcanvas--tienda {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  box-shadow: 3px 3px 5px black; }
+
+.offcanvastexto--tienda {
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 3px black; }
+
+.tituloiconoflex--tienda {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center; }
+
+.main__titulo--tienda {
+  color: #ee3434;
+  text-shadow: 3px 3px 5px #181818;
+  font-size: 2.5rem; }
+
+.fa-handshake:before {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   font-size: 2.5rem;
-  margin: 1rem;
-  text-align: center; }
+  color: white;
+  text-shadow: 3px 3px 3px rgba(238, 52, 52, 0); }
+
+.fa-bicycle:before {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #ee3434;
+  text-shadow: none;
+  font-size: 1.5rem; }
+
+.section__bicicletas--tienda {
+  margin: 2rem 1rem 0rem 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black; }
+
+.section__titulo--tienda {
+  font-size: 2.2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 3px #ee3434;
+  background-color: black; }
 
 .bicicletasflex--tienda {
   display: flex;
@@ -334,7 +367,7 @@ aside {
   position: relative;
   width: 380px;
   height: 280px;
-  max-width: 380px;
+  max-width: 400px;
   margin: 0.5rem 1rem 0.5rem 1rem; }
 
 .cardface__bicicletas {
@@ -363,7 +396,7 @@ aside {
   color: white;
   text-shadow: 3px 3px 3px #ee3434;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   bottom: 0;
   line-height: 45px; }
 
@@ -403,15 +436,18 @@ aside {
 .cardbicicletas:hover .cardback {
   transform: perspective(600px) rotateY(360deg); }
 
+.pagination--tienda {
+  margin-top: 1rem; }
+
 /*-------------------------------------------------INICIO PAG CALENDARIO----------*/
 /*-------------------------------------------------INICIO PAG RANKING----------*/
 /*-----------------------------------------------------------MEDIA QUERIES------*/
 /*Mobile*/
 @media only screen and (max-width: 480px) {
   .grid {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto auto; }
-    .grid #header__h1 {
+    .grid #portada__h1 {
       font-size: 3rem; }
     .grid .contenido__titulo {
       font-size: 1rem; }
@@ -471,7 +507,7 @@ aside {
 
 @media only screen and (min-width: 481px) and (max-width: 978px) {
   .grid {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto auto; }
     .grid .header__navbar--flex {
       justify-content: space-evenly; }
@@ -479,8 +515,6 @@ aside {
       padding: 0rem;
       font-size: 0.9rem;
       margin: 0.2rem; }
-    .grid section img {
-      width: 300px; }
     .grid .footer__ul__flex {
       display: flex;
       flex-direction: row;
@@ -501,4 +535,4 @@ aside {
 
 @media only screen and (min-width: 979px) and (max-width: 1204px) {
   section img {
-    width: 350px; } }
+    width: auto; } }
