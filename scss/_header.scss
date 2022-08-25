@@ -1,0 +1,47 @@
+.header {
+    .navbar{
+        max-height: 3.5rem;
+        box-shadow: 0px 5px 10px black;}
+    .botonirabajo{
+        color: blue;
+        font-size: 1.5rem;  
+        text-decoration: underline;
+        margin-right: 1rem;}
+    .navbar__texto{
+        font-size: 1.7rem;
+        padding-left: 0.5rem;
+        font-weight: 400;
+        color: white;
+        text-shadow: 3px 3px 5px rgb(238, 52, 52);
+        &:hover{
+            text-decoration: underline;}}        
+    .navbar__texto2{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 5px rgb(238, 52, 52);}
+    .header__irabajo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;}
+    .portada{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: fixed;
+        background-size: cover;
+        background-image: url(../img/fondo4.jpeg);
+        height: 100vh;}
+    .portada__h1{
+        font-family: 'Coda', cursive;
+        text-transform: none;
+        color: rgb(255, 255, 255);
+        font-size: 6rem;
+        font-weight: 400;      
+        text-shadow: 5px 5px 5px black;}
+        
+}

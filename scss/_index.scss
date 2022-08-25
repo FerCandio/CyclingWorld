@@ -1,0 +1,127 @@
+.main--index { 
+    background: fixed;
+    background-image: url(../img/background3.png);
+    overflow-x: hidden;
+    .mainflex--index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+    .divencabezado--index{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        box-shadow: 0px 5px 10px black;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .main__titulo--index{
+        color: rgb(238, 52, 52);
+        text-shadow: 3px 3px 5px #181818;
+        font-size: 3rem;
+        margin: 0.5rem;
+    }
+    .iconoestrella--index:before{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 2.5rem;
+        color: rgb(255, 221, 0);
+        text-shadow: 3px 3px 5px rgb(188, 170, 52);
+    }
+    .carousel--index{        
+        margin-right: 5vh;
+        margin-left: 5vh;
+        border: 0px black;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgb(0, 0, 0);}
+    .imgcarousel--index{
+        border-radius: 10px;
+        border: 0px black;
+        box-sizing: border-box;
+        border-style: none;}
+    .h3carousel--index{
+        color: white;
+        font-size: 2.5rem;
+        text-shadow: 3px 3px 3px black;}
+    .linkcarousel--index{
+        font-size: 2rem;
+        text-shadow: 3px 3px 3px black;
+    }
+    .visitartienda--index{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        align-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+        box-shadow: 5px 5px 5px black;
+    }
+    .textovisitartienda--index{
+        font-size: 1.7rem;
+        color: white;
+        padding-right: 0.5rem;
+        text-shadow: 2px 2px 2px rgb(238, 52, 52);
+    }
+    .botonvisitartienda--index{
+        background-color: rgb(238, 52, 52);
+        font-size: 1.7rem;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+        max-height: 3rem;        
+    }
+    .noticiasflex--index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divnoticia--index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        height: auto;
+        margin-top: 2rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 3px solid rgb(0, 0, 0);
+        box-shadow: 5px 5px 10px rgb(0, 0, 0);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: 1s;
+    }
+    .divimgnoticia--index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgnoticia--index{
+        max-width: 100%;
+    }
+    .contenidonoticia--index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .titulonoticia--index{
+        color: white;
+        font-size: 2.2rem;
+        margin-top: 1rem;
+        text-shadow: 3px 3px 5px rgb(238, 52, 52);
+    }
+    .textonoticia--index{
+        color: white;
+        font-size: 1.7rem;
+        max-width: 90%;
+        text-shadow: 2px 2px 2px #181818;
+        text-align: justify;
+    }
+
+    .logo--index{
+        max-width: 80px;
+        margin-bottom: 0.5rem;
+    }
+    
+}

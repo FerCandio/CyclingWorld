@@ -53,10 +53,8 @@
                         <a class="nav-link navbar__texto" href="./contacto.html" style="background-color: #000000;">Contacto</a>
                       </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                      <button type="button" class="btn btn-dark me-2 navbar__texto btn-sm" type="button" style="background-color: #000000;">Ingresar</button>
-                      <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                      <button type="button" class="btn btn-dark me-2 navbar__texto btn-sm" type="submit" style="background-color: #000000;">Buscar</button>
+                    <form class="d-flex">
+                      <a class="btn botonirabajo btn-sm" href="#abajo" role="button" style="background-color: #000000;">IrAbajo</a>
                     </form>
                   </div>
                 </div>
@@ -72,16 +70,16 @@
         </header>
             
         <main class="main--tienda">
-          <div class="main__divencabezado--tienda">
+          <div class="main__divencabezado--tienda" data-aos="zoom-in" data-aos-duration="1000">
             <div class="btn-group">
               <button type="button" class="btn boton--tienda" style="background-color: rgb(238, 52, 52)">Categorías</button>
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(238, 52, 52)">
                     <span class="visually-hidden">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" style="background-color: #000000;">
-                    <li><a class="dropdown-item boton--tienda" href="#">Bicicletas</a></li>
-                    <li><a class="dropdown-item boton--tienda" href="#">Indumentaria</a></li>
-                    <li><a class="dropdown-item boton--tienda" href="#">Repuestos</a></li>
+                    <li><a class="dropdown-item boton--tienda" href="#bicicletas--tienda">Bicicletas</a></li>
+                    <li><a class="dropdown-item boton--tienda" href="#repuestos--tienda">Repuestos</a></li>
+                    <li><a class="dropdown-item boton--tienda" href="#indumentaria--tienda">Indumentaria</a></li>
                     
                   </ul>
                 </div>
@@ -108,17 +106,19 @@
 
                 <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title offcanvastexto--tienda" id="offcanvasScrollingLabel">Preguntas Frecuentes:</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title offcanvastitulo--tienda" id="offcanvasScrollingLabel">Preguntas Frecuentes <i class="fa-regular fa-circle-question"></i></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
-                    <ul>
+                    <ul class="offcanvaslista--tienda">
                       <li class="offcanvastexto--tienda">¿En qué condiciones se encuentran las bicicletas?</li>
-                      <p class="offcanvastexto--tienda">Revisamos y certificamos cada bicicleta en nuestro taller y nos aseguramos de que se entregue en perfectas condiciones.</p>
+                      <p class="offcanvastexto--tienda">Revisamos y certificamos cada bicicleta en nuestro taller y nos aseguramos de que se entreguen en perfectas condiciones.</p>
                       <li class="offcanvastexto--tienda">¿Tienen garantía?</li>
-                      <p class="offcanvastexto--tienda">Te damos 12 meses de garantía en bicicleta usada (más la garantía que tenga cada fabricante)</p>
-                      <li class="offcanvastexto--tienda">Tiene devolucion?</li>
-                      <p class="offcanvastexto--tienda">Capaz</p>
+                      <p class="offcanvastexto--tienda">Te damos 12 meses de garantía en bicicletas usadas (además de la garantía del fabricante)</p>
+                      <li class="offcanvastexto--tienda">¿Ofrecen financiación?</li>
+                      <p class="offcanvastexto--tienda">Si, por supuesto. Puedes financiar tu compra y pagar en cuotas.</p>
+                      <li class="offcanvastexto--tienda">¿La indumentaria tiene devolución?</li>
+                      <p class="offcanvastexto--tienda">Si. Hay un plazo de un mes desde efectuada la compra para cambiar el producto, o te ofrecemos una gift card para no perder tu dinero.</p>
                     </ul>
                   </div>
                 </div>
@@ -126,7 +126,7 @@
               
               
               
-              <section class="section__bicicletas--tienda">
+              <section class="section__bicicletas--tienda" id="bicicletas--tienda" data-aos="zoom-in-left" data-aos-duration="1000">
                 <h3 class="section__titulo--tienda"><i class="fa-solid fa-bicycle"></i>Bicicletas <i class="fa-solid fa-bicycle"></i></h3>
                 <div class="bicicletasflex--tienda">
                 
@@ -244,26 +244,12 @@
                   </div>
                 </div>
               </div>
-              <nav aria-label="Page navigation example" >
-                <ul class="pagination justify-content-center pagination--tienda" >
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+              <div class="logoflex--tienda">
+                <img class="logo--tienda" src="../img/logo4.png" alt="">
+              </div>
             </section>
 
-            <section class="section__bicicletas--tienda">
+            <section class="section__bicicletas--tienda" id="repuestos--tienda" data-aos="zoom-in-right" data-aos-duration="1000">
               <h3 class="section__titulo--tienda"><i class="fa-solid fa-bicycle"></i>Repuestos<i class="fa-solid fa-bicycle"></i></h3>
               <div class="bicicletasflex--tienda">
               
@@ -362,26 +348,12 @@
                 </div>
               </div>
             </div>
-            <nav aria-label="Page navigation example" >
-              <ul class="pagination justify-content-center pagination--tienda" >
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <div class="logoflex--tienda">
+              <img class="logo--tienda" src="../img/logo4.png" alt="">
+            </div>
           </section>
 
-            <section class="section__bicicletas--tienda">
+            <section class="section__bicicletas--tienda" id="indumentaria--tienda" data-aos="zoom-in-left" data-aos-duration="1000">
               <h3 class="section__titulo--tienda"><i class="fa-solid fa-bicycle"></i>Indumentaria<i class="fa-solid fa-bicycle"></i></h3>
               <div class="bicicletasflex--tienda">
               
@@ -442,23 +414,9 @@
                 </div>
               </div>
             </div>
-            <nav aria-label="Page navigation example" >
-              <ul class="pagination justify-content-center pagination--tienda" >
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <div class="logoflex--tienda">
+              <img class="logo--tienda" src="../img/logo4.png" alt="">
+            </div>
           </section>
 
           
@@ -469,52 +427,43 @@
             
       </main>
             
-          <footer class="footer">           
-              <h2 class="animate__animated animate__pulse animate__delay-0s animate__slow animate__infinite footer__titulo">CyclingWorld</h2>
-              <ul class="footer__menu">
-                <div class="footer__ul__flex">
-                  <div><li><a href="#">Quiénes Somos</a></li></div>
-                  <div><li><a href="#">Merchandising</a></li></div>
-                  <div><li><a href="#">Historia</a></li></div>
-                  <div class="redes">                          
-                          <ul class="list-unstyled">
-                            <li class="list-inline-item">
-                              <a>
-                                  Redes:
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="">
-                                    <i class="fa-brands fa-facebook"></i>
-                                  </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="">
-                                  <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a href="">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        </div>
-                        
-                    </div>
-                </ul>
-                        
-                <a id="abajo" class="footer__irarriba" href="#arriba">IrArriba</a>
-                <div class="footer__creditos">
-                Desarrollado por F.D.C. Todos los derechos reservados ©.
-            </div>
-            
-          </footer>
+      <footer class="footer">            
+        <div class="footer__quienes">
+          <h6 class="tituloquienes">¿Quiénes Somos?</h6>
+          <p class="textoquienes"> CW es la comunidad que no existía y que todos los ciclistas necesitábamos. Nacimos de la pasión que compartimos. Ayudanos!</p>
+        </div>
+      
+        <div class="footer__cierre">
+            <img class="footer__logo" src="../img/logo4.png" alt="">        
+            <h5 class="animate__animated animate__pulse animate__delay-2s animate__slow animate__infinite footer__titulo">CyclingWorld</h5>
+            <a id="abajo" class="footer__irarriba" href="#portada__h1">IrArriba</a>
+        </div>
+                                    
+        <ul class="list-unstyled redes">
+            <li class="list-inline-item">
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+             </li>
+            <li class="list-inline-item">
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="">
+                     <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                 <a href="">
+                     <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+
+        <p class="footer__creditos">Desarrollado por F.D.C. Todos los derechos reservados ©.</p>
+    </footer>
         </div>
         <!-- LINK AOS -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
