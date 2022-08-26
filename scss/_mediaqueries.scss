@@ -1,141 +1,420 @@
-/*MOBILE*/
-
+/*-------------------------MOBILE---------------------------*/
 @media only screen and (max-width: 480px){
-    .grid{
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        
-        #portada__h1{
+// ---------------------------------------------------HEADER
+    .header{
+        .portada{
+            background-image: url(../img/fondo4recorte2.jpg);
+        }
+        .portada__h1{
             font-size: 3rem;
-        }        
-        .contenido__titulo{
-            font-size: 1rem;
-        }        
-        .contenido__texto{
+        }
+        .portada__h2{
+            font-size: 1.7rem;
+        }
+        .navbar__texto{
+            font-size: 1.5rem;
+        }
+        .botonirabajo{
+            font-size: 1.2rem;  
+        }
+    }
+// ---------------------------------------------------HEADER
+// ---------------------------------------------------FOOTER
+    .footer{
+        .footer__titulo{
+            font-size: 2rem;
+            text-align: center;
+            text-shadow: 3px 3px 5px rgb(238,52,52);
+            font-weight: 400;
+        }
+        .tituloquienes{
+            
+            font-size: 1.2rem;
+        }
+        .textoquienes{
+            
+            font-size: 1.2rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
             line-height: 1;
-            font-size: 1rem;
         }
-        .carousel{
-            max-width: auto;
+        .footer__logo{
+            max-width: 40px;
         }
-        section img {
-            max-width: auto;
-            border-radius: 10px;
-        }        
-        .aside__titulo {
-            padding-top: 0rem;  
-            font-size: 1.3rem;  
-        }
-        .aside__li{
-            padding: 0rem 0rem 0rem 0rem;
-            margin: 0rem 0rem 0rem 0rem;
-        }
-        .aside__li li {
-            padding: 0rem 0rem 0rem 0rem;
-            line-height: 1;
-            font-size: 1rem;
-            margin: 0.5rem 0rem 0rem 0rem;            
-        }
-        .footer__ul__flex{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }    
-        .footer__menu a {
-            padding: 0.3rem;
-            font-size: 0.8rem;
-        }
+        .fa-twitter:before{
+            font-size: 1.5rem;
+            margin-right: 2rem;
+            margin-left: 2rem;}
+        .fa-facebook:before{
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-left: 1rem;}
+        .fa-instagram:before{
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-left: 1rem;}
+        .fa-youtube:before{
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-left: 1rem;}
+        .footer__irarriba{
+            font-size: 1.2rem;
+            }
         .footer__creditos {
-            font-size: 0.8rem;
-            margin: 0;
-            padding: 0;
+            font-size: 1.2rem;
         }
+        
     }
+// ---------------------------------------------------FOOTER
+// ---------------------------------------------------SPONSORS
+    .divsponsors{ 
+        .titulosponsors{
+        font-size: 1.2rem;}
+        }
+// ---------------------------------------------------SPONSORS
+// ---------------------------------------------------INDEX
 
-    /*--------------Pág Contacto--------------*/
-    .aside__ingresar{
-        padding-left: 3px;
-    }    
-    .aside__textoingresar{
-        font-size: 1rem;
-        margin-left: 0;
-        padding-left: 0;
+    .main--index{
+        .main__titulo--index{
+            font-size: 2rem;
     }
-    .aside__botoningresar{
+    .carousel--index{        
+        margin-right: 0vh;
+        margin-left: 0vh;
+    }
+    .h3carousel--index{
+        font-size: 1.2rem;
+    }
+    .linkcarousel--index{
         font-size: 1rem;
     }
-    
-
-    /*---------Formulario(Section)-----------*/
-    .formulario{
-        .formulario--titulo{
-            font-size: 1.1rem;
-        }
-        .formulario--label{
-            font-size: 1rem;
-        }
-        .boton--reset{
-            font-size: 1rem;
-        }
-        .botonformulario--submit{
-            font-size: 1rem;
-        }
-        .formulario--input{
-            font-size: 1rem;
-        }
-        .formulario--textarea{
-            font-size: 1rem;
-        }
+    .textovisitartienda--index{
+        font-size: 1.2rem;
+    }
+    .botonvisitartienda--index{
+        font-size: 1.2rem;
+        max-height: 3rem;        
+    }
+    .divnoticia--index{
+        width: 95%;
+        height: auto;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+    .titulonoticia--index{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .textonoticia--index{
+        color: white;
+        font-size: 1rem;
+    }
+    .logo--index{
+        max-width: 50px;
+        margin-bottom: 0.5rem;
     }
 }
 
-/*TABLET*/
+// ---------------------------------------------------INDEX
+// ---------------------------------------------------TIENDA
 
+    .main--tienda{
+        .main__divencabezado--tienda{
+            padding: 0.5rem;
+            
+        }
+        .main__titulo--tienda{
+            font-size: 1.5rem;
+        }
+        .boton--tienda{
+            font-size: 1.2rem;
+            color: white;
+            text-shadow: 3px 3px 3px black;
+            
+        }
+        .fa-handshake:before{
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            font-size: 1.5rem;}
+    
+        .botonoffcanvas--tienda{
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+    
+        .offcanvas-header{
+            background-color: black;
+        }
+    
+        .offcanvastitulo--tienda{
+            
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem;
+            text-shadow: 3px 3px 3px rgb(238, 52, 52);
+        }
+    
+        .offcanvastexto--tienda{
+            font-size: 1.2rem;   
+            text-shadow: 3px 3px 3px black;
+            margin-left: 0;
+            text-align: justify ;
+        }
+        .section__bicicletas--tienda{
+            margin: 1rem 0.5rem 0rem 0.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+        }
+        .section__titulo--tienda{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .logo--tienda{
+            width: 50px;
+        }
+    }
+// ---------------------------------------------------TIENDA
+// ---------------------------------------------------REVIEWS
+    .main--reviews{
+        .main__titulo--reviews{
+            font-size: 2rem;
+        }
+        .iconoestrella--reviews:before{
+            font-size: 1.5rem;
+            
+        }
+        .divreviews--reviews{
+            width: 95%;
+            margin-top: 1rem;           
+            border-radius: 10px;
+        }
+        .tituloreviews--reviews{
+            
+            font-size: 2rem;
+            
+        }
+        .textoreviews--reviews{
+            
+            font-size: 1.2rem;
+            
+        }
+        .veredicto--reviews{
+            
+            font-size: 1.2rem;
+            
+        }
+        .logo--reviews{
+            max-width: 85px;
+            margin-bottom: 0.5rem;
+        }
+    }
+// ---------------------------------------------------REVIEWS
+// ---------------------------------------------------GALERIA
+
+    .main--galeria{
+        .tituloencabezado--galeria{
+            font-size: 2rem;
+        }
+        .iconocamara--galeria{
+            font-size: 2rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+        .titulocarousel--galeria{
+            font-size: 2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .carousel--galeria{
+            margin-right: 1vh;
+            margin-left: 1vh;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgb(0, 0, 0);
+        }
+        .h3carousel--galeria{
+            font-size: 1.2rem;
+        }
+        .titulotopten--galeria{
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            
+        }
+        .logo--galeria{
+            max-width: 30px;
+        }
+        .tituloimg__galeria--galeria{
+            font-size: 1.5rem;
+        }
+        .divimg__galeria--galeria{
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+            max-width: 95%;
+        }
+    }
+// ---------------------------------------------------GALERIA
+// ---------------------------------------------------CONTACTO
+    .main--contacto{
+        .main__titulo--contacto{
+            font-size: 2rem;
+        }
+        .iconocontacto--contacto:before{
+            font-size: 1.5rem;
+        }
+        .formulario--contacto{
+            width: 95%;
+        }
+        .formulario--titulo{
+            font-size: 2rem;
+        }
+        .formulario--label{
+            font-size: 1.5rem;
+        }
+        .formulario--input{
+            font-size: 1.2rem;
+        }
+        .formulario--textarea{
+            font-size: 1.2rem;
+        }
+        .botonformulario--submit{
+            font-size: 1.5rem;
+        }
+        .boton--reset{
+            font-size: 1.5rem;
+        }
+        .tituloinfo--contacto{
+            font-size: 2rem;
+        }
+        .textoinfo--contacto{
+            font-size: 1.5rem;
+        }
+        .iframe--contacto{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+}
+
+/*-------------------------MOBILE---------------------------*/
+/*-------------------------TABLET---------------------------*/
 @media only screen and (min-width: 481px) and (max-width: 978px) {
     
     .grid{
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-    
-        .header__navbar--flex {
-            justify-content: space-evenly;
+        .portada{
+            background-image: url(../img/fondo4recorte.jpg);
         }
-        .header__navbar a {
-            padding: 0rem;
-            font-size: 0.9rem;
-            margin: 0.2rem;           
+        .portada__h1{
+            font-size: 4.5rem;
         }
-        
-        .footer__ul__flex{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }    
-        .footer__menu a {
-            padding: 0.3rem;
-            font-size: 0.9rem;
-        }
-        .footer__creditos {
-            font-size: 0.9rem;
-            margin: 0;
-            padding: 0;
-        }
-        .aside__textoingresar{
-            font-size: 1.5rem;
-        }
-        .aside__flex--ingresar{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+        .portada__h2{
+            font-size: 2.2rem;
         }
     }
+//---------------------------------------------------- INDEX
+        .main--index{
+            .main__titulo--index{
+                font-size: 2.5rem;
+        }
+        .carousel--index{        
+            margin-right: 2vh;
+            margin-left: 2vh;
+        }
+        .h3carousel--index{
+            font-size: 1.5rem;
+        }
+        .linkcarousel--index{
+            font-size: 1.5rem;
+        }
+        .divnoticia--index{
+            width: 85%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+        .titulonoticia--index{
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+        .textonoticia--index{
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
+//---------------------------------------------------- REVIEWS
+        .main--reviews{
+            .main__titulo--reviews{
+                font-size: 2.5rem;
+        }
+        .divreviews--reviews{
+            width: 90%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+        .tituloreviews--reviews{
+            font-size: 2.2rem;
+            margin-top: 1rem;
+            text-shadow: 2px 2px 3px rgb(238, 52, 52);
+        }
+        .textoreviews--reviews{
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 2px #181818;
+        }
+        .veredicto--reviews{
+            font-size: 1.7rem;
+            text-shadow: 3px 3px 3px rgb(238, 52, 52);
+        }
+    }
+//---------------------------------------------------- GALERIA
+        .main--galeria{
+            .carousel--galeria{
+                margin-right: 2vh;
+                margin-left: 2vh;
+                border-radius: 10px;
+            }
+        .titulocarousel--galeria{
+            font-size: 2rem;
+                
+            }
+        .h3carousel--galeria{
+            color: white;
+            font-size: 1.7rem;
+            }
+        .titulotopten--galeria{
+            font-size: 2rem;
+        }
+
+    }
+
+
 }
 
-/*DESKTOP*/
-
+/*-------------------------TABLET---------------------------*/
+/*-------------------------DESKTOP--------------------------*/
 @media only screen and (min-width: 979px) and (max-width: 1204px){
-    section img {
-        width: auto; 
+    .header{
+        .portada{
+            background-image: url(../img/fondo4-1204px.jpg);
+        }
+    }
+    
+    .grid{
+        .titulonoticia--index{
+            margin-left: 1rem;
+            margin-right: 1rem;
+            font-size: 2rem;
+        }
+        .textonoticia--index{
+            font-size: 1.5rem;
+        }
+        .tituloreviews--reviews{
+            font-size: 2rem;
+        }
+        .textoreviews--reviews{
+            font-size: 1.5rem;
+        }
     }
 }

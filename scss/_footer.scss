@@ -30,6 +30,9 @@
         font-size: 1.7rem;
         text-shadow: 3px 3px 3px rgb(0, 0, 0);
         margin-bottom: 0rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
     }
 
     .footer__cierre{
@@ -42,8 +45,9 @@
         max-width: 80px;
     }
     .list-inline-item a i:hover{
-         text-decoration: underline;
-         color: rgb(238,52,52);}
+        scale: (1.1);
+        text-decoration: underline;
+        color: rgb(238,52,52);}
     
     .redes{
         color: rgb(255, 255, 255);

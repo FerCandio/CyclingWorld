@@ -2,8 +2,31 @@
     background: fixed;
     background-image: url(../img/background3.png);
     overflow-x: hidden;
-    .formulario{
-        background-color: #202020;
+    .divencabezado--contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        box-shadow: 0px 5px 10px black;
+        margin-bottom: 1rem;
+        padding-top: 0.5rem;
+        width: 100%;
+    }
+    .main__titulo--contacto{
+        color: rgb(238, 52, 52);
+        text-shadow: 3px 3px 5px #181818;
+        font-size: 3rem;
+    }
+    .iconocontacto--contacto:before{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 2.2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 5px rgb(68, 118, 255);
+    }
+    .formulario--contacto{
+        background-color: #181818;
         box-shadow: 5px 5px 10px black;
         width: 90%;
         max-width: 650px;
@@ -12,14 +35,14 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
         border-radius: 5px;
-        padding-bottom: 3rem;}
+        padding-bottom: 4rem;}
     .formulario .formulario--label{
         display: block;
         position: relative;}
     .formulario--label{
-        color: rgb(238, 52, 52);}
-        font-size: 1.5rem;
-        text-shadow: 3px 3px 3px black;
+        color: rgb(255, 255, 255);}
+        font-size: 1.7rem;
+        text-shadow: 3px 3px 3px rgb(238, 52, 52);
     .formulario--titulo{
         text-align: center;
         text-shadow: 3px 3px 3px rgb(0, 0, 0);
@@ -28,6 +51,7 @@
     .formulario--input {
         background: rgba(0, 0, 0, 0.7);
         border: none;
+        font-size: 1.5rem;
         outline: none;
         border-bottom: 2px solid rgb(238,52,52);
         width: 100%;
@@ -41,19 +65,19 @@
         outline: none;
         border-bottom: 2px solid rgb(238,52,52);
         width: 100%;
+        font-size: 1.5rem;
         padding: 12px;
         margin-bottom: 20px;
         border-radius: 2px;
         color: white;
         resize: vertical;
-        max-height: 150px;
+        max-height: 200px;
         min-height: 100px;}
     .botonformulario--submit{
         width: 48%;
         outline: none;
         border: none;
-        font-size: 1.6rem;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgb(0, 0, 0);
         color: rgb(238, 52, 52);
         padding-top: 2px;
         padding-bottom: 2px;
@@ -61,13 +85,13 @@
         margin-bottom: 0px;
         cursor: pointer;
         border-radius: 3px;
-        float: right;}
+        float: right;
+        font-size: 1.7rem;}
     .boton--reset{
         width: 48%;
         outline: none;
         border: none;
-        font-size: 1.6rem;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgb(0, 0, 0);
         color: rgb(238, 52, 52);
         padding-top: 2px;
         padding-bottom: 2px;
@@ -75,6 +99,31 @@
         margin-bottom: 0px;
         cursor: pointer;
         border-radius: 3px;
-        float: left;}
-
+        float: left;
+        font-size: 1.7rem;}
+    .divinfo--contacto{
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    .tituloinfo--contacto{
+        font-size: 2.5rem;
+        color: rgb(238, 52, 52);
+        text-shadow: none;
+        
+    }
+    .textoinfo--contacto{
+        font-size: 1.8rem;
+        color: white;
+        text-shadow: 3px 3px 3px rgb(238, 52, 52);
+    }
+    .iframe--contacto{
+        width: 400px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #181818;
+    }
 }

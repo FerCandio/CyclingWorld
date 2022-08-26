@@ -2,4 +2,112 @@
     background: fixed;
     background-image: url(../img/background3.png);
     overflow-x: hidden;
+    .divencabezado--galeria{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 0.5rem;
+        background: black;
+        box-shadow: 0px 10px 10px black;
+    }
+    .tituloencabezado--galeria{
+        font-size: 2.5rem;
+        color: rgb(238, 52, 52);
+        text-shadow: 3px 3px 5px #181818;
+    }
+    .iconocamara--galeria{
+        color: rgb(219, 219, 219);
+        font-size: 2.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        text-shadow: 3px 3px 3px rgb(238, 52, 52);
+    }
+    .divtitulocarousel--galeria{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-top: 1rem;
+        
+    }
+    .titulocarousel--galeria{
+        font-size: 2.5rem;
+        color: white;
+        text-shadow: 3px 3px 3px rgb(238, 52, 52);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .carousel--galeria{
+        margin-right: 5vh;
+        margin-left: 5vh;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    }
+    .imgcarousel--galeria{
+        border-radius: 10px;
+        border: 0px black;
+        box-sizing: border-box;
+        border-style: none;}
+    .h3carousel--galeria{
+        color: white;
+        font-size: 2.5rem;
+        text-shadow: 3px 3px 5px black;}
+    .textocarousel--galeria{
+        font-size: 2rem;
+        text-shadow: 3px 3px 3px black;
+    }
+    .galeria--galeria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    .divtitulotopten--galeria{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .titulotopten--galeria{
+        font-size: 2.2rem;
+        color: white;
+        text-shadow: 3px 3px 3px rgb(238, 52, 52);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .divimg__galeria--galeria{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        max-width: 90%;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+    }
+    .tituloimg__galeria--galeria{
+        color: white;
+        font-size: 2rem;
+        text-shadow: 3px 3px 3px rgb(238, 52, 52);
+        margin-bottom: 0rem;
+        padding-bottom: 0rem;
+    }
+    .img1__galeria--galeria{
+        margin: 0rem;
+        max-width: 100%;
+        max-height: 100vh;
+        border-radius: 10px;
+        border: 0px solid rgb(0, 0, 0);
+        box-shadow: 5px 5px 10px black;
+        transition: all 1s;
+        &:hover{
+            scale: (1.1);
+            border: 5px solid rgb(238, 52, 52);
+        }
+    }
+    
 }
